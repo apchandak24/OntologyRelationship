@@ -18,12 +18,11 @@ public class MainActivity {
 		stdVocab = new TrainingData().initVocabulary();
 		takeInput();
 		PerformOperation mOperation = new PerformOperation();
-		ArrayList<String> relation = mOperation.getStandardRelationship(relationships, stdVocab);
+		String relation = mOperation.getStandardRelationship(relationships, stdVocab);
 
-		if (relation.size() > 0) {
+		if (!relation.isEmpty()) {
 			System.out.println("Triple with standard ontology mapping");
-			for (String s : relation)
-				System.out.println(actor1 + "----" + s + "----" + actor2);
+				System.out.println(actor1 + "----" + relation + "----" + actor2);
 		} else {
 			System.out.println("Standard Ontology cannot be found");
 		}

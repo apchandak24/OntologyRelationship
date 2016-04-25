@@ -8,7 +8,7 @@ import com.application.model.StandardOntology;
 
 public class PerformOperation {
 
-	public ArrayList<String> getStandardRelationship(ArrayList<String> input,
+	public String getStandardRelationship(ArrayList<String> input,
 			HashMap<String, ArrayList<StandardOntology>> stdVocab) {
 
 		HashMap<String, Integer> result = new HashMap<>();
@@ -29,11 +29,11 @@ public class PerformOperation {
 			}
 		}
 		int maxVal =0;
-		ArrayList<String> relation= new ArrayList<>();
+		String relation="";
 		for (Map.Entry<String, Integer> map : result.entrySet()) {
 			if(map.getValue()>=maxVal){
 				maxVal = map.getValue();
-				relation.add(map.getKey());
+				relation=map.getKey();
 			}
 				
 		}
