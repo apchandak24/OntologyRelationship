@@ -1,0 +1,49 @@
+{
+	"vocabulary": [{
+		"relation": play,
+		"percentage": [{
+			"ontology": "Child of",
+			"value": 30
+		}, {
+			"ontology": "Friend of",
+			"value": 70
+		}, {
+			"ontology": "Spouse of",
+			"value": 10
+		}, {
+			"ontology": "Colleague of",
+			"value": 30
+		}]
+	},{
+		"relation": study,
+		"percentage": [{
+			"ontology": "Child of",
+			"value": 10
+		}, {
+			"ontology": "Friend of",
+			"value": 70
+		}, {
+			"ontology": "Spouse of",
+			"value": 10
+		}, {
+			"ontology": "Colleague of",
+			"value": 40
+		}]
+	},
+	{
+		"relation": stay,
+		"percentage": [{
+			"ontology": "Child of",
+			"value": 70
+		}, {
+			"ontology": "Friend of",
+			"value": 20
+		}, {
+			"ontology": "Spouse of",
+			"value": 90
+		}, {
+			"ontology": "Colleague of",
+			"value": 5
+		}]
+	}]
+}
